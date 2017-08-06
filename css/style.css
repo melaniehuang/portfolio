@@ -22,6 +22,10 @@
   float: left;
   box-sizing: border-box; }
 
+.row {
+  margin-bottom: 200px;
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
@@ -303,3 +307,28 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+/* SVG Blog animations
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.morph-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.morph {
+  position: relative;
+  height: 100%;
+  fill: var(--background-color-2);
+  flex: none;
+}
