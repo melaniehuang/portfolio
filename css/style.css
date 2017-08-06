@@ -26,6 +26,11 @@
   margin-bottom: 200px;
 }
 
+#blobs {
+  width:50%;
+  height:50%;
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
