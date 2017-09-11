@@ -12,20 +12,14 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
-    <div class="container">
-      <div id ="header" class="row">
-        <div id = "logo" class="eight columns">
-          <img src="images/mlm-logo.svg" alt="Media Lab Melbourne logo">
-        </div>
-        <div id = "nav" class="four columns">
-          <ul>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="events.html">COLLABORATIONS</a></li>
-            <li><a href="events.html">ABOUT US</a></li>
-        </div>
+    <div id ="nav" class="row">
+      <div id = "menu" class="eleven columns">
+        <a href="events.html"><i class="zmdi zmdi-menu"></i>Menu</a>
+        <img id = "logo" src="images/media-lab-logo.svg" alt="Media Lab Melbourne logo"></img>
       </div>
-      
-      <div class="row">
+    </div>
+    <div class="container">      
+      <div id = "header" class="row">
         <div class="ten columns">
           <h1><p><a href="">Media Lab Melbourne</a> is a not-for-profit dedicated to bringing together creators from all fields of practise to explore the potential of new technologies. </p>
           <p>From <a href="">meetups</a> to <a href="">workshops</a>, <a href="">exhibitions</a> to <a href="">collaborations</a> — we’re dedicated to promoting artists, designers, scientists, engineers, architects, developers, couturiers, performers and every imagination in between to come together and make great things.</p></h1>
@@ -33,60 +27,73 @@
       </div>
 
       <div class="row divider">
-          UPCOMING EVENTS
+          Upcoming Events
       </div>
 
       <div class="row">
         <div class="eight columns">
-          <h1 class="largeLink"><a class="largeLink" href="https://www.facebook.com/events/1653161878049888">Wed 30th Aug 2017</br>OpenLAB</a></h1>
-          <h1 class="largeLink"><a href="https://www.facebook.com/events/1653161878049888">Thurs 7th Sept 2017</br>Creative Technology Melbourne</a></h1>
+          <h2 class="largeLink">Wed 30th Aug 2017</br>
+          <a class="largeLink" href="https://www.facebook.com/events/1653161878049888">OpenLAB</a></h1>
+
+          <h2 class="largeLink">Thurs 7th Sept 2017</br>
+          <a href="https://www.facebook.com/events/1653161878049888">Creative Technology Melbourne</a></h1>
+
           <a class="button button-primary" href="https://www.facebook.com/MediaLabMelbourne/" target="_blank">View all events<i class="zmdi zmdi-arrow-right"></i></a>
         </div>
       </div>
       
       <div class="row divider">
-          OUR COMMUNITY
+          Our Community
       </div>
 
-      <div class="row">
-        <div class="five columns">
-          <h1>OpenLAB</h1>
+      <div id = "community" class="row">
+        <div class="six columns">
+          <img src="images/placeholder.png"></img>
+          <h2>OpenLAB</h2>
           <p>A series of free talks by artists working  with digital technologies — sharing highlights  (and lowlights) of their practices through talk  and demonstration.</p>
-          <a class="button button-primary" href="https://www.facebook.com/MediaLabMelbourne/" target="_blank">View next meetup<i class="zmdi zmdi-arrow-right"></i></a>
+          <a class="button button-primary" href="https://www.facebook.com/MediaLabMelbourne/" target="_blank">Next meetup<i class="zmdi zmdi-arrow-right"></i></a>
         </div>
-      </div>
-      <div class="row">
-        <div class="five columns">
-          <h1>Creative Tech Melbourne</h1>
+        <div class="six columns">
+          <img src="images/placeholder.png"></img>
+          <h2>Creative Tech Melbourne</h2>
           <p>Calling all artists, coders, creators, makers and curious-ers - to get together and share the weirdest and wonderfulest demos  and projects. </p>
-          <a class="button button-primary" href="https://www.facebook.com/MediaLabMelbourne/" target="_blank">View next meetup<i class="zmdi zmdi-arrow-right"></i></a>
+          <a class="button button-primary" href="https://www.facebook.com/MediaLabMelbourne/" target="_blank">Next meetup<i class="zmdi zmdi-arrow-right"></i></a>
         </div>
       </div>
     </div>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="four columns">
-            <h4>Get in contact</h4>
-            If you have any other questions or would like to know more about MLM, please email us on:
-            info@medialabmelbourne.com.au
-          </div>
-          <div class="four columns">
-            <h4>Keep up to date on social</h4>
+      <div id ="footer" class="container">
+        <div id ="footerContent" class="row">
+          <div class="six columns">
+            <h4>Keep in touch</h4>
             <ul>
-              <li><i class="zmdi zmdi-facebook"></i>Like us on Facebook</li>
-              <li><i class="zmdi zmdi-twitter"></i>Follow us on Twitter</li>
-              <li><i class="zmdi zmdi-facebook"></i>Join the Creative Tech Group</li>
+            <p class="smallBody">
+              <li><a href=""><i class="zmdi zmdi-email"></i>Email us</li></a>
+              <li><a href=""><i class="zmdi zmdi-facebook"></i> Like us on Facebook</li></a>
+              <li><a href=""><i class="zmdi zmdi-twitter"></i>Follow us on Twitter</li></a>
+              <li><a href=""><i class="zmdi zmdi-facebook"></i> Join  Creative Tech Group</li></a></p>
             </ul>
           </div>
-          <div class="four columns">
+          <div class="six columns">
             <h4>Accessible text</h4>
-            Bigger text
-            Smaller text
-            High contrast text
+            <div id="accessText">
+              <a href="">A +</a>
+              <a href="">A -</a></br>
+            </div>
+            <a href=""><i class="zmdi zmdi-format-color-fill"></i> High contrast text</a>
           </div>
+        </div>  
+      </div>
+      <div id ="subFooter" class="row">
+        <div class="six columns">
+            <a href="">Code of Conduct</a></br></br>
         </div>
-      </footer>
+        <div id="copyright" class="six columns">
+            <p>© 2017 Media Lab Melbourne</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/snap.svg-min.js"></script>
     
