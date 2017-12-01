@@ -323,8 +323,9 @@ there.
 }
 
 #intro p {
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  right: 0;
   color:#000000;
   font-size: 20px;
   font-family: 'Philosopher', sans-serif;
