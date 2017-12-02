@@ -339,12 +339,19 @@ there.
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #background-blob {
-  display:block;
-  
+  position:absolute;
+  top:10%;
+  left:0;
+  width:1000px;
+  height:800px;
   z-index: -2;
 }
 
 @media (min-width: 550px) {
   #background-blob {
+    top:10%;
+    left:30%;
+    width:1500px;
+    height:1200px;
   }
 }
