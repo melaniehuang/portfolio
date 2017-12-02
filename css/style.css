@@ -21,7 +21,6 @@
   box-sizing: border-box; }
 
 .row {
-  margin-bottom: 200px;
 }
 
 .divider{
@@ -30,19 +29,6 @@
   font-size: 1em;
 }
 
-footer {
-  background-color: #4C4D48;
-  width:100%;
-}
-
-footer ul {
-  list-style: none;
-  padding-left:0px;
-}
-
-footer li {
-  margin-bottom: 8px;
-}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -127,7 +113,7 @@ body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #ffffff; 
-  background-color: #ffffff;
+  background-color: #FFF73B;
 }
 
 
@@ -142,8 +128,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
-h1 { font-size: 2.1rem; line-height: 1.1;  letter-spacing: 0rem;}
-h2 { font-size: 1.9rem; line-height: 1.4; letter-spacing: -.1rem; }
+h1 { font-size: 1.9rem; line-height: 1.1;  letter-spacing: 0rem;}
+h2 { font-size: 1.6rem; line-height: 1.4; letter-spacing: -.1rem; }
 h3 { font-size: 1.6rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 1.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.2rem; line-height: 1.5;  letter-spacing: -.05rem; }
@@ -151,50 +137,29 @@ h6 { font-size: 1.1rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 1.7rem; }
-  h2 { font-size: 2.8rem; }
-  h3 { font-size: 2.0rem; }
-  h4 { font-size: 1.2rem; }
-  h5 { font-size: 2.4rem; }
-  h6 { font-size: 1.5rem; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  h4 { font-size: 1.1rem; }
+  h5 { font-size: 1.0rem; }
+  h6 { font-size: 0.9rem; }
 }
 
 p {
   margin-top: 0; 
 }
 
-.project img {
-  float:left;
-}
-
-.project-heading h4 { 
-  color:#000000;
-  font-size: 24px;
-}
-
-.project-heading p { 
-  color:#33320C;
-  margin-bottom: 0px;
-  font-size: 14px;
-}
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #0942E0; 
+  color: #0942E0;
+  text-decoration: none; 
 }
 a:hover {
   color: #3369FF; }
 
-.largeLink {
-  margin-bottom: 96px;
-}
-
 .zmdi {
-  position: relative;
-  font-size: 1.3em;
-  margin-left: 24px;
-  top: 1px;
+  margin-left:8px;
 }
 
 /* Buttons
@@ -258,29 +223,6 @@ input[type="button"].button-primary:focus {
   background-color: #3369FF;
 }
 
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem; }
-
-
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -310,43 +252,52 @@ there.
 }
 
 #hero {
-  background-color: #FFF73B;
-  position:relative;
   height:100vh;
 }
 
-.header {
-  position:absolute;
-  top:20%;
-  width:100%;
-  color:#fff;
-  -ms-transform: translate(0,-50%); /* IE 9 */
-  -webkit-transform: translate(0,-50%); /* Safari */
-  transform: translate(0,-50%);  
-}
-
 #intro {
-  float: left;
-  margin-top: 130%;
-  padding: 0px 32px;
+  position:absolute;
+  top:100vh;
+  transform:translateY(-100%);
+  color: #3B4CFF;
+  padding-left: 32px;
 }
 
 #intro h1 {
-  margin-bottom: 200px;
-  font-size: 28px;
+  max-width: 420px;
 }
 
-.header p {
-  position: absolute;
-  bottom: 0;
-  color:#000000;
-  font-size: 20px;
-  font-family: 'Philosopher', sans-serif;
+#intro p {
+  margin-top:160px;
+  font-size:16px;
 }
 
-#content{
-  padding:0px 0px;
+#content {
+  padding: 64px 0px;
+  background-color: #ffffff;
   margin:0px auto;
+}
+
+#content img {
+  width:100%;
+}
+
+#content h2 {
+  color:#000000;
+}
+
+#content p {
+  color:#33320C;
+  font-size: 14px;
+  margin:0;
+}
+
+.project {
+  padding:32px 32px;
+}
+
+.project img {
+  float:left;
 }
 
 /* Larger than mobile */
@@ -355,6 +306,22 @@ there.
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+  #intro {
+    right:0;
+    padding-left:0px;
+  }
+  
+  .projectSet {
+    padding:0px 32px;
+  }
+
+  .project {
+    padding:32px 0px;
+  }
+
+  .project img {
+    float:left;
+  }
 }
 
 /* Larger than tablet */
@@ -372,9 +339,12 @@ there.
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #background-blob {
-  position: fixed;
-  left: 10%;
-  width: 200%;
-  z-index: -100;
-  padding-top: 130%;
+  display:block;
+  
+  z-index: -2;
+}
+
+@media (min-width: 550px) {
+  #background-blob {
+  }
 }

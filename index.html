@@ -2,8 +2,6 @@
   <head>
     <meta charset="utf-8">
     <title>Mel Huang - Interactive Designer</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
@@ -13,57 +11,45 @@
   </head>
   
   <body>
-    <div class="container">      
-      <div id ="hero" class="row">
-        <img id ="logo" src="images/logo.svg" alt="Mel Huang - Interactive Designer"></img>
-        
-        <div class="header">  
-          <div id ="intro" class="six columns">
-            <h1>Melbourne-based interactive designer creating interfaces and installations  for the arts, culture & education.</h1>
-            <p>Some things I’ve made</p>
-          </div>
+    <div class="container"> 
 
-          <script src="js/jquery-3.2.0.min.js"></script>
-          <script src="js/snap.svg-min.js"></script>    
-          <div id="background-blob">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 988 1050.56">
-              <title>path-01</title>
-              <g id="blob" data-name="blob">
-                <g id="blobs"><path id="path-01" class="cls-1" d="M205.69,320.3c75-5,216,85.71,216-66s-129.63-268-244-253C65.89,15.93,11.59,171.85,2,250.94-16.35,401.55,96.52,327.58,205.69,320.3Z"/>
-                </g>
+      <div id ="hero" class="row">
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/snap.svg-min.js"></script>    
+        <div id="background-blob">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 988 1100">
+            <g id="blob" data-name="blob">
+              <g id="blobs">
+                <path id="path-01" class="cls-1" d="M205.69,320.3c75-5,216,85.71,216-66s-129.63-268-244-253C65.89,15.93,11.59,171.85,2,250.94-16.35,401.55,96.52,327.58,205.69,320.3Z"/>
               </g>
-            </svg>
-          </div>
-          <script src="js/blob.js"></script>       
+            </g>
+          </svg>
         </div>
+        <script src="js/blob.js"></script> 
+        <img id ="logo" src="images/logo.svg" alt="Mel Huang - Interactive Designer"></img>
+        <div class="row">
+          <div id ="intro" class="one-half column">
+            <h1>Melbourne-based interactive designer creating interfaces and installations  for arts, culture & education.</h1>
+            <p>Recent projects <i class="zmdi zmdi-long-arrow-right"></i></p>
+          </div>
+        </div>
+
       </div>
 
-      <div id = "content" class="row">
-        <div id ="projects" class="twelve columns">
-          
-          <div class="project five columns">
-            <div class="project-heading">
-              <p>National Gallery of Victoria</p>
-              <h4>NGV Guide</h4>
-            </div>
+      <div id="content">
+        <div class="projectSet row">
+          <a href="" class="project one-half column">
+            <p>National Gallery of Victoria</p>
+            <h2>NGV Guide</h2>
             <img src="images/image-placeholder.png"></img>
-          </div> 
-          
-          <div class="project five columns">
-            <div class="project-heading">
-              <p>National Gallery of Victoria</p>
-              <h4>NGV Guide</h4>
-            </div>
+          </a>
+          <a href="" class="project one-half column">
+            <p>National Gallery of Victoria</p>
+            <h2>NGV Guide</h2>
             <img src="images/image-placeholder.png"></img>
-          </div> 
-
-        </div> 
-      </div> 
-    </div>
-  </div>
-
-
-
+          </a>
+        </div>
+      </div>
   </body>
 
 </html>
