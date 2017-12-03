@@ -113,7 +113,7 @@ body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #ffffff; 
-  background-color: #FFF73B;
+  background-color: #F9FB00;
 }
 
 
@@ -284,6 +284,7 @@ there.
 
 #content h2 {
   color:#000000;
+  letter-spacing: 0.1px;
 }
 
 #content p {
@@ -300,13 +301,18 @@ there.
   float:left;
 }
 
+.coming-soon{
+  opacity: 0.6;
+}
+
 footer {
-  background-color: #000;
+  background-color: #0201FC;
   padding: 32px 32px;
+  font-size: 14px;
 }
 
 footer a {
-  color: #FFF73B;
+  color: #F9FB00;
 }
 
 footer p {
@@ -314,8 +320,13 @@ footer p {
 
 footer ul {
   list-style-type: none;
+  padding: 0;
+  margin-top:0;
 }
 
+footer li{
+  margin:0;
+}
 
 
 /* Larger than mobile */
@@ -343,6 +354,7 @@ footer ul {
 
   footer li {
   }
+
 }
 
 /* Larger than tablet */
@@ -361,18 +373,20 @@ footer ul {
 
 #background-blob {
   position:absolute;
-  top:10%;
+  top:4%;
   left:0;
-  width:1000px;
-  height:800px;
+  width:94%;
+  height:100%;
+  padding-left:6%;
   z-index: -2;
 }
 
 @media (min-width: 550px) {
   #background-blob {
-    top:10%;
-    left:30%;
-    width:1500px;
-    height:1200px;
+    width:90%;
+    height:100%;  
+    top:1%;
+    padding-left:10%;
+    overflow:hidden;
   }
 }
