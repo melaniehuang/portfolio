@@ -468,6 +468,11 @@ footer li{
     float:left;
   }
 
+  .project-images iframe {
+    float:left;
+    display:block;
+  }
+
   #project-intro {
     right:0;
   }
