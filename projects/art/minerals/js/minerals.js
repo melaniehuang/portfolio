@@ -1,5 +1,5 @@
 function preload(){
-  t = loadImage("images/pour-grey.gif");
+  t = loadImage("/projects/art/minerals/images/pour-grey.gif");
 }
 
 function setup() {
