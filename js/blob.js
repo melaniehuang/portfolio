@@ -4,7 +4,7 @@ s = Snap(svg);
 var path = s.select('#path-01');
 
 path.attr({
-  fill:"l()#f9f9f9-#f9f9f9" 
+  fill:"l()#3B4CFF-#FFFFFF" 
 });
 
 animatePath();

@@ -16,14 +16,16 @@
       <div id ="hero" class="row">
         <script src="/js/jquery-3.2.0.min.js"></script>
         <script src="/js/snap.svg-min.js"></script>    
-        <div id="background-blob">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700">
-            <g id="blob" data-name="blob">
-              <g id="blobs">
-                <path id="path-01" class="cls-1" d="M205.69,320.3c75-5,216,85.71,216-66s-129.63-268-244-253C65.89,15.93,11.59,171.85,2,250.94-16.35,401.55,96.52,327.58,205.69,320.3Z"/>
+        <div id="blob-container">
+          <div id="background-blob">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700">
+              <g id="blob" data-name="blob">
+                <g id="blobs">
+                  <path id="path-01" class="cls-1" d="M205.69,320.3c75-5,216,85.71,216-66s-129.63-268-244-253C65.89,15.93,11.59,171.85,2,250.94-16.35,401.55,96.52,327.58,205.69,320.3Z"/>
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+          </div>
         </div>
         <script src="/js/blob.js"></script> 
         <a href="/index.html"><img id ="logo" src="/images/logo.svg" alt="Mel Huang - Interactive Designer"></img></a>
@@ -38,10 +40,10 @@
 
       <div id="content">
         <div class="projectSet row">
-          <a href="/projects/ngv-guide" class="project one-half column">
-            <p>National Gallery of Victoria</p>
-            <h2>Discovering more art</h2>
-            <img src="/images/ngv1.jpg"></img>
+          <a href="/projects/technecolour" class="project one-half column">
+            <p>Technecolour Workshops</p>
+            <h2>Bringing together creativity & technology</h2>
+            <img src="/images/tw1.jpg"></img>
           </a>
           <a href="/projects/pioneers" class="project one-half column">
             <p>Computer Pioneers</p>
@@ -49,28 +51,43 @@
             <img src="/images/pioneers1.jpg"></img>
           </a>
         </div>
+
         <div class="projectSet row">
-          <a href="/projects/gurrk" class="project one-half column">
-            <p>Science Gallery Melbourne</p>
-            <h2>Preserving Indigenous Language</h2>
-            <img src="/images/science1.jpg"></img>
+          <a href="/projects/dark-mofo" class="project one-half column">
+            <p>Dark Mofo x MONA</p>
+            <h2>Goth spring break</h2>
+            <img src="/images/mofo1.jpg"></img>
           </a>
-          <a href="/projects/captions" class="project one-half column">
-            <p>Four Letter Word Theatre</p>
-            <h2>Captioning Tool for Live Performance</h2>
-            <img src="/images/captions1.jpg"></img>
+          <a href="/projects/ngv-guide" class="project one-half column">
+            <p>National Gallery of Victoria</p>
+            <h2>A collection beyond walls</h2>
+            <img src="/images/ngv1.jpg"></img>
           </a>
         </div>
+
         <div class="projectSet row">
-          <a href="/projects/media-lab" class="project one-half column">
-            <p>Media Lab Melbourne</p>
-            <h2>Building a community</h2>
-            <img src="/images/mlm1.jpg"></img>
+          <a href="/projects/dementia-aus" class="project one-half column">
+            <p>Sensilab x Dementia Australia</p>
+            <h2>Visualising the brain</h2>
+            <img src="/images/brain1.jpg"></img>
           </a>
-          <a href="/projects/paul-kolp" class="project one-half column">
-            <p>The Park Lane HK x Paul Kolp</p>
-            <h2>Kaleidoscopic Foyer</h2>
-            <img src="/images/kolp1.jpg"></img>
+          <a href="/projects/gurrk" class="project one-half column">
+            <p>Science Gallery Melbourne</p>
+            <h2>Preserving indigenous language</h2>
+            <img src="/images/science1.jpg"></img>
+          </a>
+        </div>
+
+        <div class="projectSet row">
+          <a href="/projects/captions" class="project one-half column">
+            <p>Four Letter Word Theatre</p>
+            <h2>Captioning tool for live performance</h2>
+            <img src="/images/captions1.jpg"></img>
+          </a>
+          <a href="/projects/agnsw-masters" class="project one-half column">
+            <p>AGNSW: Masters of Modern Art Audio Guide</p>
+            <h2>Exploring the colours of the Hermitage</h2>
+            <img src="/images/agnsw1.jpg"></img>
           </a>
         </div>
         <div class="projectSet row">
@@ -79,46 +96,23 @@
             <h2>Noss Noss Studio</h2>
             <img src="/images/nossnoss1.jpg"></img>
           </a>
-          <a href="/projects/ngv-maps" class="project one-half column">
-            <p>National Gallery of Victoria</p>
-            <h2>Interactive Map Redesign</h2>
-            <img src="/images/maps1.jpg"></img>
+          <a href="/projects/paul-kolp" class="project one-half column">
+            <p>The Park Lane HK x Paul Kolp</p>
+            <h2>Kaleidoscopic foyer</h2>
+            <img src="/images/kolp1.jpg"></img>
           </a>
         </div>
-        <div class="projectSet row">
-          <a class="project one-half column coming-soon">
-            <p>Media Lab Melbourne</p>
-            <h2>DIY Monsters Workshop(Mar 2018)</h2>
-            <img src="/images/diy1.jpg"></img>
-          </a>
-          <a href="/projects/fireworks" class="project one-half column">
-            <p>Melbourne Star</p>
-            <h2>Interactive Fireworks</h2>
-            <img src="/images/fireworks1.jpg"></img>
-          </a>
-        </div>
-        <div class="projectSet row">
-          <a href="/projects/bpcletool" class="project one-half column">
-            <p>BPCLEtool</p>
-            <h2>Helping health organisations run</h2>
-            <img src="/images/btool1.jpg"></img>
-          </a>
-          <a href="/projects/happiness" class="project one-half column">
-            <p>Common Code(Internal)</p>
-            <h2>Visualising Happiness</h2>
-            <img src="/images/happiness1.jpg"></img>
-          </a>
-        </div>
+
         <div class="projectSet row">
           <a href="https://medium.com/@melhuang_/building-a-diy-dance-dance-revolution-e136265bbbfc" class="project one-half column">
             <p>Dance Dance Revolution</p>
             <h2>That time I built a dance machine<i class="zmdi zmdi-square-right"></i></h2>
             <img src="/images/dance1.jpg"></img>
           </a>
-          <a href="/projects/super-happy" class="project one-half column">
-            <p>Deakin University</p>
-            <h2>Super Happy Prize Time</h2>
-            <img src="/images/shpt1.jpg"></img>
+          <a href="/projects/fireworks" class="project one-half column">
+            <p>Melbourne Star</p>
+            <h2>Interactive fireworks</h2>
+            <img src="/images/fireworks1.jpg"></img>
           </a>
         </div>
       </div>
@@ -128,32 +122,40 @@
     
         <div id="community" class="row">
           <div class="one-half column">  
-            <h2>I feel so lucky to have been afforded the opportunities to be inspired by the artists, designers and developers that make crazy and beautiful things with code. I'm passionate about building these communities locally.</h2>
+            <h2>I feel so fortunate to be inspired and energized by a global community of creative practitioners building beautiful things with code. I am dedicated to building, strengthening and contributing to these communities locally.</h2>
 
           </div>
           <div class="one-half column">
-            <h3>Communities</h3>
+            <h3>Initiatives + Teaching</h3>
             <ul>
-              <li>Media Lab Melbourne: Committee member</li>
-              <li>Creative Technology meetup: Organiser</li>
-              <li>Codelikeagirl: Ambassador</li> 
+              <li>Technecolour</li>
+              <li>Media Lab Melbourne</li>
+              <li>Code Like a Girl: Ambassador</li> 
+              <li>RMIT Sessional Lecturer: Creative Coding(Digital Media)</li>
+              <li>The Lab Online: Online Mentor</li>
             </ul>
 
-            <h3>Talks + Workshops</h3>
+            <h3>Workshops</h3>
             <ul>
-              <li>2018 | City of Melbourne + MLM: DIY Monsters(Coming soon)</li>
-              <li>2018 | Melbourne Design Week + MLM: Generative Patterns(Coming soon)</li>
+              <li>2019 | Generative Patterns: Signal x Melbourne Knowledge Week</li>
+              <li>2019 | Generative Patterns x Escher (Melbourne Design Week)</li>
+              <li>2019 | Processing Community Day: Melbourne</li>
+              <li>2018 | DIY Monsters: Code Like a Girl x Art Processors</li>
+              <li>2018 | DIY Monsters: City of Melbourne + MLM </li>
+              <li>2018 | Code Like a Girl x Art Processors: DIY Monsters</li>
+              <li>2018 | Generative Patterns x NGV Triennial (Melbourne Design Week)</li>
+            </ul>
+
+            <h3>Talks</h3>
+            <ul>
+              <li>March 2019 | AGDA: Design Shift Panel</li>
               <li>2017 | Digital Designers Toolbox: Cultural accessibility</li>
               <li>2017 | OpenLAB: Cultural accessibility and generative art</li>
               <li>2017 | Creative Tech Melb meetup: Building a Dance Machine</li>
               <li>2017 | General Assembly: Creative Technology Panel</li>
               <li>2016 | Melbourne International Film Festival: Code in the Cinema</li>
               <li>2016 | Codelikeagirl: Code + Art</li>
-              <li>2016 | Redbubble Creative Talks: How to reach your audience</li>
               <li>2015 | Melbourne Design Week: Design Hub Showcase</li>
-              <li>2015 | Pixel Awards: Finalist(The Amazing Race and John West)</li>
-              <li>2015 | AIMIA: Highly Commended - Best Smartphone or Tablet Application(Schweppes)</li>
-              <li>2014 | Melbourne Design Awards: Gold - Branded Experience(Deakin Uni)</li>
             </ul>
           </div>
         </div>
@@ -161,18 +163,19 @@
 
       <footer class="row">
         <ul class="one-half column">
+          <li><a href="https://www.instagram.com/melaniehuang_/">I code machines that make art</a></li>
           <li><a href="https://twitter.com/melaniehuang_">I tweet the things I like</a></li>
           <li><a href="https://github.com/melaniehuang">I commit the things I make</a></li>
-          <li><a href="https://www.instagram.com/melaniehuang_/">I code machines that make art</a></li>
           <li><a href="https://www.linkedin.com/in/melhuang/">I sometimes LinkedIn</a></li>
         </ul>
 
         <ul class="one-half column">
-          <li>Mel Huang • hello@melaniehuang.com</li>
-          <li><a href="/docs/resume.pdf">+ this is my resume</a></li>
+          <li>Mel Huang</li>
+          <li>hello@melaniehuang.com</li>
         </ul>
         
       </footer>
+
 
     </div>
   </body>
