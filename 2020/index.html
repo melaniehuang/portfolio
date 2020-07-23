@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel Huang</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+  	<svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false" class="svg-filters">
+		<defs>
+		    <pattern id="pattern1" patternUnits="userSpaceOnUse" width="100" height="100">
+    		  <image xlink:href="/images/patternimage.png" x="0" y="0" width="100" height="100" />
+  			</pattern>
+
+  			<pattern id="pattern2" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+  			  <circle cx="10" cy="10" r="2" style="stroke: none; fill: #000" />	
+  			</pattern>
+
+  			<pattern id="pattern3" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+  			  <!-- <line x1="10" y1="0" x2="0" y2="10" style="stroke:#000 ;stroke-width:1" /> -->
+  			  <rect width="6" height="6" style="fill: #000"/>
+  			</pattern>
+
+			<linearGradient id="grad-right" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				<stop offset="100%" style="stop-color:rgb(236,235,241);stop-opacity:0" />
+	    	</linearGradient>
+			<linearGradient id="grad-left" x1="100%" y1="0%" x2="0%" y2="0%">
+				<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				<stop offset="100%" style="stop-color:rgb(236,235,241);stop-opacity:0" />
+	    	</linearGradient>
+			<linearGradient id="grad-down" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				<stop offset="100%" style="stop-color:rgb(236,235,241);stop-opacity:0" />
+	    	</linearGradient>
+			<linearGradient id="grad-up" x1="0%" y1="100%" x2="0%" y2="0%">
+				<stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				<stop offset="100%" style="stop-color:rgb(236,235,241);stop-opacity:0" />
+	    	</linearGradient>
+		    <filter id="filt">
+		      <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="2" result="warp"></feTurbulence>
+		      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="20" in="SourceGraphic" in2="warpOffset" />
+		    </filter>
+		</defs>
+  	</svg>
+  	<section class="top-wrapper">
+	  	<div id="navbar">
+			<ul>
+			  <li id="home" class="filterLink">
+			  	<a href="/index.html">Mel Huang</a>
+			  </li>
+			  <li id="contact">
+			  	<a href="#footer">Contact</a>
+			  </li>
+			</ul>
+	  	</div>
+
+	  	<div id="intro">
+	  		<h1>Melbourne-based designer and developer for the arts, culture and education sectors.</h1> 
+	  	</div>
+
+  		<div id="creds">
+  			<div>
+  				<h4><a href="#featured-wrapper" class="link-style">Projects</a></h4>
+  				<p></p>
+  			</div>
+  			<div>
+  				<h4>Educator</h4>
+  				<p>Sessional lecturer of Creative Coding at RMIT(Digital Media), Former Mentor at The Lab Online</p>
+				
+  				<p>Workshops in partnership with Linden New Art, Signal, Code like a Girl, Melbourne Knowledge Week, Melbourne Design Week, Processing Community Day Aus/NZ, City of Melbourne</p>
+  			</div>
+  			<div>
+  				<h4>Talks</h4>
+  				<p>Ballarat Tech School, Emerging Writers’ Festival, AGDA, Creative State Summit, Melbourne International Film Festival, Code Like a Girl, Media Lab Melbourne</p>
+  			</div>
+  		</div>
+  	</section>
+  	<section id="featured-wrapper">
+  		<a href="/technecolour">
+	  		<div>
+	  			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-left)"/>
+	  				<image href="/images/patternimage.png" width="100%"/>
+	  			</svg>
+				<h3>Technecolour</h3>
+	   			<h2><span class="project-underline">Workshops</span></h2>
+	  			<p class="project-summary">I founded this initiative to write, curate and teach workshops that provide technical, practical and relevant education for creative practitioners.</p>
+	  			
+	  			<p class="project-wip"><em>
+	  			  Work in progress</br>
+	  			  Educator, Mentor and Writer
+	  			</em></p>
+	  		</div>
+  		</a>
+  		<a href="/chamber-made">
+	  		<div>
+	  			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-left)" />
+	  			</svg>
+				<h3>Chamber Made</h3>
+	   			<h2><span class="project-underline">SYSTEM_ERROR</span></h2>
+	  			<p class="project-summary">A performance piece uniting bodies and electronics upon a conductive stage.</p>
+	  			<p class="project-wip"><em>
+	  			  Work in progress</br>
+	  			  Data Visualisation Artist
+	  			</em></p>
+	  		</div>
+  		</a>
+  		<a href="/tennis">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-up)" />
+	  			</svg>
+				<h3>AKQA x Monash University</h3>
+	   			<h2><span class="project-underline">Blind Tennis</span></h2>
+	  			<p class="project-summary">Exploring the sonification of broadcast tennis for a community living with vision impairment.</p>
+	  			<p class="project-wip"><em>
+	  			  Work in progress</br>
+	  			  Designer
+	  			</em></p>
+	  		</div>
+  		</a>
+  		<a href="/subspace">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-down)" />
+	  			</svg>
+				<h3>Emily Siddons</h3>
+	   			<h2><span class="project-underline">Subspace</span></h2>
+	  			<p class="project-summary">A new online museum and archive specialising in born-digital works and objects.</p>
+	  			<p class="project-wip"><em>
+	  			  Work in progress</br>
+	  			  Designer and Visualisation Developer
+	  			</em></p>
+	  		</div>
+  		</a>
+  		<a href="/captioning">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-right)" />
+	  			</svg>
+				<h3>FLW Theatre</h3>
+	   			<h2><span class="project-underline">The Days In Between</span></h2>
+	  			<p class="project-summary">Building a captioning tool for live performance</p>
+	  			<p class="project-wip"><em>
+	  			  Designer and Developer
+	  			</em></p>
+	  		</div>
+  		</a>
+  		<a href="/dark-mofo">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-left)" />
+	  			</svg>
+				<h3>Dark Mofo</h3>
+	   			<h2><span class="project-underline">Goth Spring Break</span></h2>
+	  			<p class="project-summary">Creating a digital presence, from practical to impractical.</p>
+	  			<p class="project-wip"><em>
+	  			  Designer and Schedule Developer
+	  			</em></p>	  		
+	  		</div>
+  		</a>
+  	</section>
+
+  	<section class="projects-wrapper">
+   		<a href="/blood">
+   			<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-down)" />
+	  			</svg>
+				<h3>Blood x Science Gallery</h3>
+	   			<h2><span class="project-underline">Preserving indigenous language</span></h2>
+	   			<p class="project-summary"><em>Designer and Developer</em></p>
+  			</div>
+  		</a>
+  		<a href="/dementia-australia">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-up)" />
+	  			</svg>
+				<h3>Sensilab x Dementia Australia</h3>
+	   			<h2><span class="project-underline">Visualising the brain</span></h2>
+	   			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/japan-supernatural">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-down)" />
+	  			</svg>
+				<h3>Art Gallery NSW</h3>
+	   			<h2><span class="project-underline">Japan Supernatural</span></h2>
+	  			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/patch">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-up)" />
+	  			</svg>
+				<h3>Disposable x Science Gallery</h3>
+	   			<h2><span class="project-underline">p@tch by Janna Ahrndt</span></h2>
+	   			<p class="project-summary"><em>Designer and Developer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/ngv-guide">
+	   		<div>
+	   		   	<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-down)" />
+	  			</svg>
+				<h3>National Gallery of Victoria</h3>
+	   			<h2><span class="project-underline">NGV Guide</span></h2>
+	   			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/masters">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-up)" />
+	  			</svg>
+				<h3>Art Processors x Art Gallery NSW</h3>
+	   			<h2><span class="project-underline">Masters of modern art</span></h2>
+	   			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/queuer">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-right)" />
+	  			</svg>
+				<h3>Art Processors x MONA</h3>
+	   			<h2><span class="project-underline">The O Queuer</span></h2>
+	   			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/noss-noss">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-up)" />
+	  			</svg>
+				<h3>NGV x Hassan Hajjaj</h3>
+	   			<h2><span class="project-underline">Noss Noss Studio</span></h2>
+	   			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+
+  		<a href="/biometric-mirror">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-left)" />
+	  			</svg>
+				<h3>Mindy Meng Wang & Niels Wouters</h3>
+	   			<h2><span class="project-underline">Asia TOPA x Biometric Mirror</span></h2>
+	   			<p class="project-summary"><em>Designer and Developer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/pioneers">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-right)" />
+	  			</svg>
+				<h3>Computer Pioneers</h3>
+	   			<h2><span class="project-underline">Visualising the field</span></h2>
+	   			<p class="project-summary"><em>Designer</em></p>
+	  		</div>
+  		</a>
+  		<a href="/park-lane">
+	   		<div>
+	   			<svg width="100%">
+	  				<rect width="100%" fill="url(#grad-left)" />
+	  			</svg>
+				<h3>The Park Lane x grain&pixel</h3>
+	   			<h2><span class="project-underline">Kaleidoscopic Foyer</span></h2>
+	   			<p class="project-summary"><em>Designer and Animator</em></p>
+	  		</div>
+  		</a>
+  	</section>
+  	<section id="footer">
+  		<ul>
+		  	<li id="contact-links">
+		  		<span>👩‍💻 I code <a class="project-underline" href="https://www.instagram.com/melaniehuang_/">machines</a> to make art</span>
+
+		  		<span>💾 I <a class="project-underline" href="https://github.com/melaniehuang">commit</a> the things I make</span>
+
+		  		<span>🤵 I sometimes <a class="project-underline" href="https://www.linkedin.com/in/melhuang/">LinkedIn</a></span>
+			</li>
+			<li id="contact-email">
+				hello@melaniehuang.com
+			</li>
+		</ul>
+  	</section>
+  	<script type="text/javascript" src="distort.js"></script>
+  </body>
+</html>
